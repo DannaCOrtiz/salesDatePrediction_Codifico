@@ -11,9 +11,8 @@
   realizar las pruebas, a fin de asegurar que la base de datos cuente con la estructura y datos adecuados.
 
 * El proyecto se compone de 5 carpetas principales (5 proyectos dentro de la solución):
-  * Sales_Date_Prediction.Domain: Contiene las entidades (clases de dominio).
-  * No depende de otras capas, mantiene la lógica de dominio pura.
+  * Sales_Date_Prediction.Domain: Contiene las entidades (clases de dominio). No depende de otras capas, mantiene la lógica de dominio pura.
   * Sales_Date_Prediction.Application:Lógica de negocio y casos de uso: Commands, Queries y Handlers (CQRS).
   * Sales_Date_Prediction.Infrastructure: Acceso a datos con Dapper, implementando las interfaces de Application. Maneja repositorios y la configuración de base de datos.
   * Sales_Date_Prediction.API:Exposición de endpoints (controladores) en un proyecto Web API .NET 8. Utiliza MediatR para despachar cada Query o Command según corresponda a la operación 
-  * solicitada (GET, POST, etc.).Manejo de CORS, Swagger y configuración de inyección de dependencias.
+    solicitada (GET, POST, etc.).Manejo de CORS, Swagger y configuración de inyección de dependencias.
