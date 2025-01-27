@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sales_Date_Prediction.Domain\Sales_Date_Prediction.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.11.0" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Customers\Handlers\" />
+    <Folder Include="Features\Customers\Commands\" />
+    <Folder Include="Features\Employees\Handlers\" />
+    <Folder Include="Features\Employees\Commands\" />
+    <Folder Include="Features\Order\Handlers\" />
+    <Folder Include="Features\Products\Commands\" />
+    <Folder Include="Features\Products\Handler\" />
+    <Folder Include="Features\SalesDatePrediction\Commands\" />
+    <Folder Include="Features\SalesDatePrediction\Handler\" />
+    <Folder Include="Features\Shippers\Commands\" />
+    <Folder Include="Features\Shippers\Handler\" />
+    <Folder Include="Mappings\" />
+    <Folder Include="Validators\" />
+    <Folder Include="Behaviors\" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+
+</Project>
